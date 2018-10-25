@@ -1,0 +1,31 @@
+section{
+  padding: 120px 0;
+  h1{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    color: $bolded-text-color;
+  }
+  
+  h3{
+    font-family: 'Noto Serif', serif;
+    font-size: 16px;
+    color: $faded-text-color;
+  }
+  
+  h4{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+  }
+  
+  p{
+    padding: 10px 12px;
+    color: $faded-text-color;
+    font-family: 'Roboto Slab', serif;
+  }
+}
+
+.darker-bg{
+  background-color: $darker-bg-color;
+}

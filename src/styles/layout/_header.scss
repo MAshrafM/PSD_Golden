@@ -54,10 +54,16 @@
       font-size: 75px;
       font-weight: 700;
       color: white;
+      @include breakpoint(tablet){
+        font-size: 50px;
+      }
     }
     h2{
       font-family: 'Noto Serif', serif;
       margin-bottom: 30px;
+      @include breakpoint(tablet){
+        font-size: 26px;
+      }
     }
     
     button{
@@ -69,6 +75,10 @@
       margin-top: 40px;
       outline: none;
       cursor: pointer;
+      @include breakpoint(tablet){
+        font-size: 16px;
+        padding: 10px 30px;
+      }
     }
   }
 }
