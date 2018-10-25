@@ -1,0 +1,74 @@
+.navbar{
+  padding: 20px 70px 0 70px;
+  @include breakpoint(tablet){
+    padding: 0 40px;
+  }
+}
+.bg-dark{
+  background-color: rgba(40, 40, 40, 1)!important;
+  #include breakpoint(tablet){
+    background-color: rgba(40, 40, 40, .9)!important;
+  }
+}
+
+.bg-dark-scroll{
+  background-color: rgba(40, 40, 40, .7)!important;
+}
+
+.navbar-dark{
+  .navbar-nav{
+    .nav-item{
+      padding: 0 20px;
+      @include breakpoint(tablet){
+        text-align: center;
+      }
+    }
+    .nav-link{
+      color: white;
+      &:hover{
+        color: $main-color;
+      }
+    }
+  }
+  
+  .navbar-brand{
+    color: $main-color;
+    font-size: 26px;
+    font-family: 'Lobster Two', cursive;
+    font-weight: 700;
+  }
+}
+
+.jumbotron{
+  height: 100vh;
+  background-image: url('../images/jumbo-bg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  
+  &__content{
+    height: 100%;
+    h1{
+      font-size: 75px;
+      font-weight: 700;
+      color: white;
+    }
+    h2{
+      font-family: 'Noto Serif', serif;
+      margin-bottom: 30px;
+    }
+    
+    button{
+      font-size: 18px;
+      font-weight: 700;
+      padding: 25px 50px;
+      background-color: $main-color;
+      color: white;
+      margin-top: 40px;
+      outline: none;
+      cursor: pointer;
+    }
+  }
+}
