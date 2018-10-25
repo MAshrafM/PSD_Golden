@@ -39,3 +39,9 @@ section{
 .darker-bg{
   background-color: $darker-bg-color;
 }
+
+.wrapper{
+  @include breakpoint(landscape){
+    flex-direction: column;
+  }
+}
