@@ -1,0 +1,123 @@
+.timeline{
+  width: 100%;
+  position: relative;
+  margin-top: 80px;
+ 
+  &:before{
+    content: '';
+    width: 3px;
+    background: $timeline-color;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    
+    @include breakpoint(tablet){
+      left: 150px;
+    }
+    @include breakpoint(landscape){
+      left: 60px;
+    }
+    
+  }
+  
+  ul{
+    list-style: none;
+    margin: 0;
+  }
+  
+  &__item{
+    min-height: 175px;
+    margin-bottom: 100px;
+    
+    @include breakpoint(tablet){
+      height: auto;
+    }
+    .circle{
+      @include circle(175px);
+      left: calc(50% - 86px);
+      position: absolute;
+      overflow: hidden;
+      box-sizing: border-box;
+      border: 6px solid $timeline-color;
+      transition: all .5s ease;
+      cursor: pointer;
+      z-index: 2;
+      
+      @include breakpoint(tablet){
+        left: 63px;
+      }
+      @include breakpoint(landscape){
+        @include circle(95px);
+        left: 14px;
+      }
+      
+      &:hover{
+        @include transform(scale(1.2));
+      }
+    }
+    
+    &.end{
+      margin-bottom: 0;
+      .circle{
+        background-color: $main-color;
+        
+        p{
+          font-family: 'Montserrat', sans-serif;
+          font-size: 18px;
+          color: white;
+          width: 107px;
+          left: 50%;
+          top: 50%;
+          position: absolute;
+          transform: translateX(-50%) translateY(-50%);
+          padding: 0;
+          font-weight: 700;
+        }
+      }
+    }
+    
+    .content{
+      position: absolute;
+      padding: 0 125px;
+      width: 50%;
+      box-sizing: border-box;
+      left: 50%;
+      text-align: left;
+      
+      @include breakpoint(tablet){
+        left: 150px;
+        padding-right: 75px;
+        position: relative;
+        width: calc(100% - 135px);
+      }
+      @include breakpoint(landscape){
+        left: 0;
+        width: auto;
+        padding-right: 0;
+        position: relative;
+        width: 100%;
+      }
+      p{
+        padding: 0;
+      }
+    }
+    
+    &:nth-of-type(odd){
+      .content{
+        left: 0;
+        text-align: right;
+        
+        @include breakpoint(tablet){
+          left: 150px;
+          text-align: left;
+        }
+        @include breakpoint(landscape){
+          left: 0;
+          text-align: left;
+        }
+      }
+    }
+
+  }
+}

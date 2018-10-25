@@ -35,7 +35,7 @@ module.exports = {
       use: ['style-loader', MiniCssExtractPlugin.loader, 'css-loader','sass-loader']
     },
     {
-      test: /\.(gif|png|jpg|svg)$/i,
+      test: /\.(gif|png|jpe?g|svg)$/i,
       loader: 'image-webpack-loader',
       enforce: 'pre',
       options: {
@@ -43,7 +43,7 @@ module.exports = {
       }
     },
     {
-      test: /\.(gif|png|jpg|svg)$/i,
+      test: /\.(gif|png|jpe?g|svg)$/i,
       exclude: /node_modules/,
       loader: 'url-loader',
       options: {
