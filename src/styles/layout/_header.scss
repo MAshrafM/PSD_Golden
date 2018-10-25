@@ -1,14 +1,12 @@
 .navbar{
-  padding: 20px 70px 0 70px;
+  padding: 20px 70px 0.5rem 70px;
+  transition: background-color .5s;
   @include breakpoint(tablet){
     padding: 0 40px;
   }
 }
 .bg-dark{
-  background-color: rgba(40, 40, 40, 1)!important;
-  #include breakpoint(tablet){
-    background-color: rgba(40, 40, 40, .9)!important;
-  }
+  background-color: transparent!important;
 }
 
 .bg-dark-scroll{
