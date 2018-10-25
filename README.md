@@ -6,7 +6,7 @@ A Frontend PSD design developed to Responsive Web Using:
 - JS  
 
 ## Show Live  
-![Show Live Website on Gh-Pages](https://mashrafm.github.io/PSD_Golden/)
+[Show Live Website on Gh-Pages](https://mashrafm.github.io/PSD_Golden/)
 
 ---  
 
